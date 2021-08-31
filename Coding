@@ -1,0 +1,9 @@
+ cloc Project_coding_Location_directory > Location\report.txt
+$From = "yourmail@gmail.com"
+$To = "mail@domain.com"
+$Attachment = "Location\report.txt"
+$Subject = "Test mail"
+$Body = "Test send file from powershell"
+$SMTPServer = "smtp.gmail.com"
+$SMTPPort = "587"
+Send-MailMessage -From $From -to $To  -Subject $Subject -Body $Body -SmtpServer $SMTPServer -port $SMTPPort -UseSsl -Credential (Get-Credential) -Attachments $Attachment 

@@ -1,7 +1,7 @@
- cloc Project_coding_Location_directory > Location\report.txt
+ cloc Project_coding_Location_directory > report.txt
 $From = "yourmail@gmail.com"
 $To = "mail@domain.com"
-$Attachment = "Location\report.txt"
+$Attachment = "report.txt"
 $Subject = "Test mail"
 $Body = "Test send file from powershell"
 $SMTPServer = "smtp.gmail.com"
